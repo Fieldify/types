@@ -4,7 +4,7 @@
   "description": "Fieldify type manager and official types sets",
   "main": "index.js",
   "bin": {
-    "types": "fieldifyType.js"
+    "fieldifyType": "bin/fieldifyType.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
