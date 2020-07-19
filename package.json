@@ -1,0 +1,19 @@
+{
+  "name": "@fieldify/types",
+  "version": "1.0.0",
+  "description": "Fieldify type manager and official types sets",
+  "main": "index.js",
+  "bin": {
+    "types": "fieldifyType.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^3.1.3",
+    "subcommander": "^1.0.0"
+  },
+  "dependencies": {}
+}

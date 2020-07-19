@@ -1,0 +1,15 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * 
+ *
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+<% for(var setName in data) { const set = data[setName].js %><% for(var a in set) { const field = set[a] %>
+const _<%= setName %><%= field.key %> = require('./<%= field.file %>');<% } %><% } %>
+
+module.exports = {
+<% for(var setName in data) { const set = data[setName].js %> '<%= setName %>': {
+    <% for(var a in set) { const field = set[a] %>'<%= field.key %>': _<%= setName %><%= field.key %>,
+    <% } %>
+  }<% } %>
+}
