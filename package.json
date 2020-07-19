@@ -1,6 +1,6 @@
 {
   "name": "@fieldify/types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fieldify type manager and official types sets",
   "main": "index.js",
   "bin": {
